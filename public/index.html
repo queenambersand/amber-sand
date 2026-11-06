@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- HOME PAGE (the landing page). tab title + what shows up in google -->
+<title>HOUSE OF SAND</title>
+<meta name="description" content="HOUSE OF SAND: drag performer and sticker artist. Book a show or shop stickers.">
+
+<!-- all the colors + layout live in style.css. edit that file to restyle every page -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ==========================================================
+     TOP BAR
+     this same block is on every page. if i add a new page, add its
+     link here AND on about / stickers / bookings.
+     the page you're on gets class="on" so it turns green.
+     ========================================================== -->
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">HOUSE OF SAND</a>
+    <nav aria-label="main">
+      <a href="index.html" class="on" aria-current="page">home</a>
+      <a href="about.html">about</a>
+      <a href="stickers.html">stickers</a>
+      <a href="bookings.html">bookings</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ==========================================================
+     HERO (the big green section)
+     the line under the title is my tagline. rewrite it however i want!
+     ========================================================== -->
+<section class="hero">
+  <div class="wrap">
+    <h1>HOUSE<br>OF SAND</h1>
+    <p>drag performer + sticker artist. book a show or grab some stickers.</p>
+    <div class="pill-row">
+      <a class="pill dark" href="bookings.html">book a show</a>
+      <a class="pill" href="stickers.html">shop stickers</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     3 BIG LINK BOXES
+     quick doors to the other pages. edit the words, keep the href's
+     ========================================================== -->
+<section class="block">
+  <div class="wrap">
+    <h2>start here.</h2>
+    <div class="cards">
+      <a class="box" href="about.html">
+        <h3>about</h3>
+        <p>who i am and how the sand got here.</p>
+      </a>
+      <a class="box" href="stickers.html">
+        <h3>stickers</h3>
+        <p>shipped to you, or picked up at a show.</p>
+      </a>
+      <a class="box" href="bookings.html">
+        <h3>bookings</h3>
+        <p>want me at your show or event? let's talk.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     PORTFOLIO GALLERY
+     right now these are black placeholder squares. to swap in a real photo:
+       1. upload the pic into the img folder (public/img/)
+       2. replace the text inside a tile with an <img>, like this:
+
+          <div class="photo"><img src="img/my-look.jpg" alt="describe the look"></div>
+
+     tips: no spaces or capital letters in the file name, real .jpg or .png files
+     (not renamed phone HEIC files). around 1200px wide and under ~400KB looks
+     crisp even when someone taps to enlarge it, and still loads fast.
+     tapping a photo opens it full screen automatically.
+     add more tiles by copying a whole <div class="photo">...</div> line.
+     ========================================================== -->
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <h2>the looks.</h2>
+    <p class="lead">a little taste of the work. more photos coming soon.</p>
+    <div class="gallery">
+      <div class="photo">photo 1</div>
+      <div class="photo">photo 2</div>
+      <div class="photo">photo 3</div>
+      <div class="photo">photo 4</div>
+      <div class="photo">photo 5</div>
+      <div class="photo">photo 6</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     UPCOMING SHOWS (black section)
+     each <li> is one show. copy/paste a whole <li> to add one,
+     delete one when the show is over.
+     if i have no shows booked, swap the list for a "follow me for dates" line.
+     ========================================================== -->
+<section class="shows">
+  <div class="wrap">
+    <h2>catch me live.</h2>
+    <p>stickers are sold in person at every show. find me at the merch table.</p>
+    <ul class="gigs">
+      <li><b>DATE TBA</b><span>venue name, city</span></li>
+      <li><b>DATE TBA</b><span>venue name, city</span></li>
+      <li><b>DATE TBA</b><span>venue name, city</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==========================================================
+     FOOTER
+     the email + instagram are filled in from site.js. don't edit them here!
+     ========================================================== -->
+<footer>
+  <div class="wrap">
+    <span>&copy; HOUSE OF SAND</span>
+    <span><a data-email href="#">email</a> &middot; <a data-instagram href="#">instagram</a></span>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
